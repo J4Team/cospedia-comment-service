@@ -24,7 +24,7 @@ public class CommentController {
     public Collection<Comment> findAll(){return commentService.findAll();}
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public void deleteByCommentId(@PathVariable Long id){
+    public void deleteById(@PathVariable Long id){
         commentService.deleteByCommentId(id);
     }
 
